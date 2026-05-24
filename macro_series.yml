@@ -7,13 +7,13 @@ series:
   # Inflation
   CPIAUCSL:
     category: inflation
-    name: Consumer Price Index for All Urban Consumers: All Items in U.S. City Average
+    name: "Consumer Price Index for All Urban Consumers: All Items in U.S. City Average"
     units: lin
     frequency: m
     alfred: true
   CPILFESL:
     category: inflation
-    name: Consumer Price Index for All Urban Consumers: All Items Less Food and Energy
+    name: "Consumer Price Index for All Urban Consumers: All Items Less Food and Energy"
     units: lin
     frequency: m
     alfred: true
@@ -53,13 +53,13 @@ series:
   # Production/activity
   INDPRO:
     category: activity
-    name: Industrial Production: Total Index
+    name: "Industrial Production: Total Index"
     units: lin
     frequency: m
     alfred: true
   TCU:
     category: activity
-    name: Capacity Utilization: Total Index
+    name: "Capacity Utilization: Total Index"
     units: lin
     frequency: m
     alfred: true
