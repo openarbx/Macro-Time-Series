@@ -1,0 +1,131 @@
+# FRED/ALFRED macro dataset registry.
+# `units` uses FRED transformation codes:
+# lin = level, chg = change, ch1 = change from year ago,
+# pch = percent change, pc1 = percent change from year ago,
+# pca = compounded annual rate, cch = continuous change, cca = continuous annual rate, log = natural log.
+series:
+  # Inflation
+  CPIAUCSL:
+    category: inflation
+    name: Consumer Price Index for All Urban Consumers: All Items in U.S. City Average
+    units: lin
+    frequency: m
+    alfred: true
+  CPILFESL:
+    category: inflation
+    name: Consumer Price Index for All Urban Consumers: All Items Less Food and Energy
+    units: lin
+    frequency: m
+    alfred: true
+  PCEPI:
+    category: inflation
+    name: Personal Consumption Expenditures Price Index
+    units: lin
+    frequency: m
+    alfred: true
+  PCEPILFE:
+    category: inflation
+    name: Core PCE Price Index
+    units: lin
+    frequency: m
+    alfred: true
+
+  # Labor market
+  UNRATE:
+    category: labor
+    name: Civilian Unemployment Rate
+    units: lin
+    frequency: m
+    alfred: true
+  PAYEMS:
+    category: labor
+    name: All Employees, Total Nonfarm Payrolls
+    units: lin
+    frequency: m
+    alfred: true
+  ICSA:
+    category: labor
+    name: Initial Claims
+    units: lin
+    frequency: w
+    alfred: true
+
+  # Production/activity
+  INDPRO:
+    category: activity
+    name: Industrial Production: Total Index
+    units: lin
+    frequency: m
+    alfred: true
+  TCU:
+    category: activity
+    name: Capacity Utilization: Total Index
+    units: lin
+    frequency: m
+    alfred: true
+  RRSFS:
+    category: activity
+    name: Advance Real Retail and Food Services Sales
+    units: lin
+    frequency: m
+    alfred: true
+
+  # Credit spreads
+  BAMLH0A0HYM2:
+    category: credit_spreads
+    name: ICE BofA US High Yield Index Option-Adjusted Spread
+    units: lin
+    frequency: d
+    alfred: false
+  BAMLC0A0CM:
+    category: credit_spreads
+    name: ICE BofA US Corporate Index Option-Adjusted Spread
+    units: lin
+    frequency: d
+    alfred: false
+  BAA10Y:
+    category: credit_spreads
+    name: Moody's Seasoned Baa Corporate Bond Yield Relative to Yield on 10-Year Treasury Constant Maturity
+    units: lin
+    frequency: d
+    alfred: true
+
+  # Money supply/liquidity
+  M2SL:
+    category: money_supply
+    name: M2
+    units: lin
+    frequency: m
+    alfred: true
+  WM2NS:
+    category: money_supply
+    name: M2, Not Seasonally Adjusted, Weekly
+    units: lin
+    frequency: w
+    alfred: true
+  TOTRESNS:
+    category: money_supply
+    name: Total Reserves of Depository Institutions
+    units: lin
+    frequency: w
+    alfred: true
+
+  # Financial conditions / stress
+  NFCI:
+    category: financial_conditions
+    name: Chicago Fed National Financial Conditions Index
+    units: lin
+    frequency: w
+    alfred: true
+  ANFCI:
+    category: financial_conditions
+    name: Chicago Fed Adjusted National Financial Conditions Index
+    units: lin
+    frequency: w
+    alfred: true
+  STLFSI4:
+    category: financial_conditions
+    name: St. Louis Fed Financial Stress Index
+    units: lin
+    frequency: w
+    alfred: true
